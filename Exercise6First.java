@@ -15,8 +15,6 @@ public class Exercise6First extends Thread {
         name = n;
         count = c;
     }
-
-    // no synchronization needed
     public void run() {
         for (int i = 0; i < count; i++)
             System.out.println(name + " " + i);
